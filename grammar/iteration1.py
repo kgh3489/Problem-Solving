@@ -1,22 +1,3 @@
-#분기문
-z = -10
-if z>0:
-    print("양수")
-else:
-    print("음수")
-
-x = 93
-if x>=90:
-    print('A')
-elif x>=80:
-    print('B')
-elif x>=70:
-    print('C')
-elif x>=60:
-    print('D')
-else:
-    print('F')
-
 #반복문
 a=range(-1, 10)
 print(list(a))
