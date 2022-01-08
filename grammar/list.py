@@ -69,7 +69,18 @@ if any(15>x for x in a): #한 번이라도  15>x이면 True 반환
     print("15보다 큰 값이 있네요!")
 else:
     print("ㅠㅠㅠ")
-    
 
+#2차원 리스트
 
-      
+a=[0]*10
+
+a=[[0]*3 for _ in range(3)] #가로로 출력
+print(a)
+
+for x in a: #2차원 형태로 출력
+    print(x)
+
+for x in a: #원소 형태로 출력
+    for y in x:
+        print(y, end=' ')
+    print()
