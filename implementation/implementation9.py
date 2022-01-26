@@ -17,7 +17,7 @@ def reverse(x):
 def isPrime(x):
     if x==1:
         return False
-    for i in range(2, x//2+1): #x의 절반까지 반복
+    for i in range(2, x//2+1): #x의 절반까지 반복(그 이후엔 약수가 없음)
         if x%i==0: #x가 i로 나누어 떨어지면
             return False
     return True
