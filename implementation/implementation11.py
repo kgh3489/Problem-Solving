@@ -5,13 +5,13 @@
 
 n=int(input())
 a=list(map(int, input().split()))
-cnt=0
 sum=0
-for i in range(n):
-    if a[i]==1:
-        cnt=cnt+1
-        sum=sum+cnt
-    else:
-        cnt=0
+cnt=0
 
+for x in a:
+    if x==1:
+        cnt+=1 #맞았을 때 가산점
+        sum+=cnt
+    else:
+        cnt=0 #틀렸다면 0으로 초기화
 print(sum)
