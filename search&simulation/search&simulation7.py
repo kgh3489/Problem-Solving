@@ -1,4 +1,4 @@
-#사과나무
+#사과나무(다이아몬드)
 
 #import sys
 #sys.stdin=open("input.txt", "r")
