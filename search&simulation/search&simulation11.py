@@ -5,13 +5,14 @@
 
 board=[list(map(int, input().split())) for _ in range(7)]
 cnt=0
-for i in range(3):
+
+for i in range(3): #연속된 5개의 숫자를 확인할 것이기 때문에 3번만 반복하면 됨
     for j in range(7):
-        tmp=board[j][i:i+5]
-        if tmp==tmp[::-1]:
+        tmp=board[j][i:i+5] #1번째~5번째 숫자
+        if tmp==tmp[::-1]: #행 검사
             cnt+=1
-        for k in range(2):
-            if board[i+k][j]!=board[i+5-k-1][j]:
+        for k in range(2): #길이가 5이므로 5//2
+            if board[i+k][j]!=board[i+5-k-1][j]: #열 검사
                 break;
         else:
             cnt+=1
