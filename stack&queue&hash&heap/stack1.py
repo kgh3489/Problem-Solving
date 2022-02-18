@@ -19,5 +19,3 @@ if m!=0: #m이 남아있다면
 
 res=''.join(map(str, stack)) #리스트를 join함수로 합
 print(res)
-
-
