@@ -6,13 +6,14 @@
 n=int(input())
 a=list(map(int, input().split()))
 seq=[0]*n
+
 for i in range(n):
     for j in range(n):
-        if(a[i]==0 and seq[j]==0):
-            seq[j]=i+1
+        if a[i]==0 and seq[j]==0: #둘 다 0이 되면
+            seq[j]=i+1 #seq의 해당 인덱스에 삽입
             break
-        elif seq[j]==0:
-            a[i]-=1
+        elif seq[j]==0: #0일 때마다
+            a[i]-=1 #하나씩 감소
 
 for x in seq:
     print(x, end=' ')
