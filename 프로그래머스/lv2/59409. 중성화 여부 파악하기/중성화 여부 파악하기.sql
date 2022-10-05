@@ -1,0 +1,8 @@
+SELECT ANIMAL_ID, NAME,
+    -- 중성화됐다면 O, 되지 않았다면 X
+    (CASE 
+    WHEN SEX_UPON_INTAKE LIKE "%Neutered%" OR SEX_UPON_INTAKE LIKE "%Spayed%" THEN "O"
+    ELSE "X"
+    END) AS "중성화"
+FROM ANIMAL_INS
+ORDER BY ANIMAL_ID
