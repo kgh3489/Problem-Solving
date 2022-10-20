@@ -1,7 +1,5 @@
-
-
-SELECT MCDP_CD 진료과코드, count(*) 5월예약건수
-from APPOINTMENT
-where Year(APNT_YMD) = 2022 and month(APNT_YMD) = 5
-group by MCDP_CD
-order by count(*), MCDP_CD
+SELECT MCDP_CD "진료과코드", COUNT(*) "5월예약건수"
+FROM APPOINTMENT
+WHERE YEAR(APNT_YMD) = 2022 AND MONTH(APNT_YMD) = 5 #2022년 5월에 예약한 환자 수
+GROUP BY MCDP_CD #진료과코드 별로 조회
+ORDER BY 5월예약건수, 진료과코드
