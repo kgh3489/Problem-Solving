@@ -8,7 +8,7 @@
 
 ### 분류
 
-기하학(geometry), 구현(implementation)
+구현, 기하학
 
 ### 문제 설명
 
